@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+}
+
+.container {
+	width: 550px;
+	height: 550px;
+	border: 2px solid #000;
+	position: relative;
+}
+
+.count {
+	list-style: none;
+	position: absolute;
+	text-align: center;
+}
+
+.count li {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.col {
+	position: absolute;
+	margin-top: -100px;
+}
+
+.row li {
+	float: left;
+}
+
+.row {
+	margin-left: 50px;
+	border-bottom: 1px solid #000;
+}
+
+.col {
+	margin-top: 50px;
+	border-right: 1px solid #000;
+}
+
+#main {
+	overflow: hidden;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+#main li {
+	list-style: none;
+	width: 49px;
+	height: 49px;
+	float: left;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.box {
+	width: 49px;
+	height: 39px;
+	background-color: blue;
+	border-top: 10px solid red;
+	position: absolute;
+	transition: all 1s;
+}
+
+.handle {
+	height: 200px;
+	position: absolute;
+	left: 600px;
+	top: 150px;
+	width: 200px;
+
+}
+
+#controller {
+	width: 200px;
+	height: 200px;
+}
+
+.blocked {
+	background-color: grey;
+}
+
+button {
+	background-color: red;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}

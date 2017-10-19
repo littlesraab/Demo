@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>create</title>	
+		<link rel="stylesheet" type="text/css" src="css/calendarStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/editFormStyle.css">
+	</head>
+	<body>
+		<div id="FormTitle"><input type="text" id="title"></div>
+		<div id="FormBody"><div id="bodyBottom"></div></div>
+		<div id="questCtrl">
+			<div id="questType">
+				<button id="qSingle" class="questButtons">单选题</button>
+				<button id="qMore" class="questButtons">多选题</button>
+				<button id="qText" class="questButtons">文本题</button>
+			</div>
+			<div id="questAdd">添加问题</div>
+		</div>
+		<div>
+			<button id="saveBtn">保存问卷</button>
+			<button id="submitBtn">发布问卷</button>
+			<button id="returnBtn">返回</button>
+			<div id="calendar"><span>截止时间:</span></div>
+		</div>
+		<script type="text/javascript" src="js/calendarScript.js"></script>
+		<script type="text/javascript" src="js/editFormScript.js"></script>
+		
+	</body>
+</html>

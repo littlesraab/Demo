@@ -1,0 +1,349 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+input{
+	border: none;
+	background-color: #FFFFFF;
+}
+
+input:hover {
+	background-color: #84C1FF;
+}
+
+#FormTitle {
+	border-bottom: 1px solid #000;
+}
+
+#title {
+	width: 75%;
+	height: 100px;
+	margin-left: 12.5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#FormBody>div {
+	width: 96%;
+	margin-top: 10px;
+	margin-left: 2%;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9D9D9D;
+}
+
+.question input {
+	margin-left: 1%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 1.5em;	
+}
+
+ .question span {
+ 	font-size: 1.6em;
+ }
+
+ .questOption {
+ 	margin-left: 1.3%;
+ 	height: 40px;
+ }
+
+.questOption input[type=text] {
+	height: 35px;
+	width: 20%;
+	margin-top: 12px;
+	margin-left: 5px;
+	font-size: 1.1em;
+}
+
+.questOption button {
+	margin-left: 65%;
+	padding: 5px 10px;
+	background: none;
+	background-color: #66B3FF;
+	border: none;	
+	border: 2px solid #66B3FF;
+	border-radius: 5px;
+	color: #fff;
+	-webkit-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	cursor: pointer;
+}
+
+.questOption button:hover {
+	background-color: #fff;
+	color: #66B3FF;
+}
+
+.questionCtrl {
+	margin-top: 15px;
+	text-align: center;
+
+}
+
+.questionCtrl button {
+	margin-left: 5px;
+	padding: 5px 10px;	
+	text-align: center;
+	background: none;
+	background-color: #66B3FF;
+	border: none;	
+	border: 2px solid #66B3FF;
+	border-radius: 5px;
+	color: #fff;
+	-webkit-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	cursor: pointer;
+}
+
+.questionCtrl button:hover {
+	background-color: #fff;
+	color: #66B3FF;
+}
+
+textarea {
+	height: 100px;
+	width: 500px;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+
+.requireBtn {
+	margin-left: 5%;
+}
+
+#questAdd {
+	width: 80%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 10%;
+	margin-top: 1%;
+	font-size: 45px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#questAdd:hover {
+	background-color: #84C1FF;
+}
+
+#questType {
+	width: 80%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 20px;
+}
+
+.questButtons {
+	margin-left: 10px;
+	padding: 7px 15px;
+	font-size: 25px;
+	background: none;
+	background-color: #66B3FF;
+	border: none;	
+	border: 2px solid #66B3FF;
+	border-radius: 5px;
+	color: #fff;
+	-webkit-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	cursor: pointer;	
+}
+
+.questButtons:hover {
+	background-color: #fff;
+	color: #66B3FF;
+}
+
+#saveBtn, #submitBtn, #returnBtn {
+	display: inline-block;
+	padding: 10px 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: none;
+	background-color: #66B3FF;
+	border: none;	
+	border: 2px solid #66B3FF;
+	border-radius: 5px;
+	color: #fff;
+	-webkit-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	-moz-transition: .5s all;
+	transition: .5s all;
+	cursor: pointer;
+}
+#saveBtn:hover, #submitBtn:hover, #returnBtn:hover {
+	background-color: #fff;
+	color: #66B3FF;
+}
+
+#saveBtn {
+	margin-left: 33%;
+}
+
+#submitBtn {
+	margin-left: 5%;
+}
+
+#returnBtn {
+	margin-left: 5%;
+}
+
+#calendar {
+	width: 250px;
+	margin-left: 40%;
+	margin-bottom: 30px;
+}
+
+#calendar span {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#calBody {
+	position: relative;
+	margin-left: -10%;
+	margin-top: 1%;
+	border: 2px solid #000;
+	width: 250px;
+	height: 210px;
+	font: normal 12px;
+	font-family: cursive,arial;
+	border-radius: 3%;
+	display: none;
+}
+
+.pre, .title, .aft{
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 0px;
+	height: 25px;
+	margin-top: .05em;
+	background-color: #0080FF;
+	margin-top: -.5px;
+}
+
+.pre, .aft {
+	width: 15%;
+	height: 25px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #0080FF;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+.pre:hover, .aft:hover,.buttons:hover {
+	background-color: #fff;
+	color: #0080FF;
+}
+
+.pre {	
+	border-top-left-radius: 13%;
+	border-bottom-left-radius: 10%;
+}
+
+.aft {
+	border-top-right-radius: 13%;
+	border-bottom-right-radius: 10%;
+}
+
+#cText {
+	height: 20px;
+	width: 110px;
+	font-size: 20px;
+}
+
+.title {
+	width: 70%;
+	height: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+.buttons {
+	height: 12%;
+	width: 40%;
+	display: inline-block;
+	text-align: center;
+	background-color: #0080FF;
+	color: #fff;
+	box-shadow: .15em .15em .05em #000;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	cursor: pointer;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+table {
+	width: 100%;
+	height: 60%;
+}
+
+th {
+	width: 14.3%;
+	
+	border-radius: 15%;
+	box-shadow: .05em .05em .05em #000;
+	background-color: #0080FF;
+	color: #fff;
+	cursor: pointer;
+}
+
+thead {
+	width: 100%;
+	height: 10%;
+}
+
+tbody {
+	border: .15em solid #000;
+}
+
+td {
+	text-align: center;
+	box-shadow: .05em .05em .1em #000;
+	border-radius: 10%;
+	cursor: pointer;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+td:hover {
+	background-color: #0080FF;
+	color: #fff;
+}
+
+.select {
+	background-color: #0080FF;
+	color: #fff;
+}
+
+#today {
+	color: #f9f900;
+}

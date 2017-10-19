@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#topNav {
+	height: 80px;
+	font-family: arial;
+	background-color: #0080FF;
+	color: #fff;
+}
+
+#topNav p:nth-child(1) {
+	margin-left: 4.0%;
+	margin-top: 1%;
+	display: inline-block;
+	font-size: 2.2em;		
+}
+
+#topNav p:nth-child(2) {
+	margin-left: 2%;
+	display: inline-block;
+	font-size: 1.9em;
+	cursor: pointer;	
+}
+
+#main {
+	width: 80%;
+
+	margin-left: 10%;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 2px #6C6C6C;
+
+}
+

@@ -1,0 +1,163 @@
+{
+	"forms": [
+		{
+			"title": "问卷1",
+			"deadline": "2018-1-1",
+			"status": 0,
+			"qData": 100,
+			"content": [
+				{
+					"qTitle": "title1",
+					"qType": "radio",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 40
+
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 40
+						}
+					]
+				},
+				{
+					"qTitle": "title2",
+					"qType": "checkbox",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 40
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 40
+						}
+					]
+				},
+				{
+					"qTitle": "title3",
+					"qType": "radio",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 40
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 40
+						},
+						{
+							"oTitle": "oTitle3",
+							"oData": 10
+						}
+					]
+				},
+				{
+					"qTitle": "title4",
+					"qType": "checkbox",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 30
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 30
+						},
+						{
+							"oTitle": "oTitle3",
+							"oData": 30
+						}
+					]
+				},
+				{
+					"qTitle": "title4",
+					"qType": "textarea",
+					"require": true,
+					"qContent": false,
+					"oData": 100
+				}
+			]
+		},
+		{
+			"title": "问卷2",
+			"deadline": "2017-1-1",
+			"status": 2,
+			"qData": 100,
+			"content": [
+				{
+					"qTitle": "title1",
+					"qType": "radio",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 30
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 30
+						}
+					]
+				},
+				{
+					"qTitle": "title2",
+					"qType": "checkbox",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 30
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 30
+						}
+					]
+				},
+				{
+					"qTitle": "title3",
+					"qType": "radio",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 40
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 40
+						},
+						{
+							"oTitle": "oTitle3",
+							"oData": 40
+						}
+					]
+				},
+				{
+					"qTitle": "title4",
+					"qType": "checkbox",
+					"options": [
+						{
+							"oTitle": "oTitle1",
+							"oData": 30
+						},
+						{
+							"oTitle": "oTitle2",
+							"oData": 30
+						},
+						{
+							"oTitle": "oTitle3",
+							"oData": 30
+						}
+					]
+				},
+				{
+					"qTitle": "title4",
+					"qType": "textarea",
+					"require": false,
+				    "qContent": false,
+					"oData": 70
+				}
+			]
+		}
+	]
+}

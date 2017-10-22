@@ -1,0 +1,28 @@
+<div id="formListBody">
+	<div id="listNav">
+		<div>问卷名称</div>
+		<div>截止时间</div>
+		<div>问卷状态</div>
+		<div>问卷操作</div>
+	</div>
+	<div class="listRow" ng-repeat="form in forms">
+		<input type="checkbox" ng-model="form.select"/>
+		<div>{{form.title}}</div>
+		<div>{{form.deadline}}</div>
+		<div>{{getStatus(form.status)}}</div>
+		<div class="questCtrl">
+			<change-page name='editForm' index={{$index}} disable='{{form.status !== 0}}'>编辑</change-page>
+			<change-page name='formData' index={{$index}} disable="{{form.status === 0}}">查看数据</change-page>
+			<change-page name='checkForm' index={{$index}}>查看问卷</change-page>
+			<button class="questBtn" ng-click="deleteForm($index)" ng-disabled="form.status === 1">删除</button>
+		</div>
+	</div>
+	<div id="formListCtrl">
+		<input type="checkbox" ng-model="isSelectAll" ng-change="selectAll(isSelectAll)"/><span>全选</span>
+		<button class="questBtn" ng-click="deleteAll()">删除</button>
+		<a class="pageCtrl" ui-sref="forms.editForm">新建问卷</a>
+	</div>
+	<div class="back">
+		<a class="pageCtrl" ui-sref="forms">返回</a>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div id="checkFormBody">
+	<header>
+		<p>{{selectedForm.title}}</p>
+	</header>
+	<div class="formBody">
+		<div class="cQuestion" ng-repeat="question in selectedForm.content">
+			<p>{{$index + 1}}.
+				<span>{{question.qTitle}}</span>
+				<get-type></get-type>
+			</p>
+			<div class="cOption" ng-repeat="option in question.options" ng-if="question.options">
+				<span>{{$index + 1}}.</span>				
+				<input type="{{question.qType}}" name="{{question.qTitle}}"/>
+				<span>{{option.oTitle}}</span>
+			</div>
+			<textarea ng-if="question.options == undefined"></textarea>
+			<div class="cRequestCtrl" ng-if="question.options === undefined">
+				<input class="request" type="checkbox" name="require" disabled="true" ng-check="question.require" ng-model="question.require"/>
+				<span>是否必填</span>
+			</div>
+		</div>
+	</div>
+	<div>
+		<button ng-click="saveFormData()" ng-if="selectedForm.status === 1">提交问卷</button>
+	</div>
+	<div back-form-list></div>
+</div>

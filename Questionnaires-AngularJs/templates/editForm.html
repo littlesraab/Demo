@@ -1,0 +1,45 @@
+<div id="editFormBody">
+	<header>
+		<input type="text" name="formTitle" ng-model="selectedForm.title"/>
+	</header>
+	<div class="formBody">
+		<div class="eQuestion" ng-repeat="question in selectedForm.content">
+			<p>{{$index + 1}}.
+				<input type="text" ng-model="question.qTitle"/>
+				<get-type></get-type>
+			</p>
+			<div class="eOption" ng-repeat="option in question.options" ng-if="question.options">
+				<span>{{$index + 1}}.</span>
+				<input type="{{question.qType}}" name="{{question.qTitle}}"/>
+				<input type="text" ng-model="option.oTitle"/>
+				<button class="questBtn" parent-index={{$parent.$parent.$index}} index={{$index}} delete-option>删除</button>
+			</div>
+			<textarea ng-if="question.options == undefined"></textarea>
+			<div  class="eRequest" ng-if="question.options === undefined">
+				<input class="req" type="checkbox" name="require"  ng-check="question.require" ng-model="question.require"/>
+				<span>是否必填</span>
+			</div>
+			<div class="questCtrl">
+				<button class="questBtn" add-options-btn index={{$index}}>增加选项</button>
+				<button class="questBtn" move-up-btn index={{$index}} ng-disabled="$first">上移</button>
+				<button class="questBtn" move-down-btn index={{$index}} ng-disabled="$last">下移</button>
+				<button class="questBtn" copy-btn index={{$index}}>复用</button>
+				<button class="questBtn" delete-btn index={{$index}}>删除</button>
+			</div>
+		</div>
+	</div>
+	<div class="addQuestCtrl">
+		<p>添加问题</p>
+		<div class="addQusetType">
+			<button class="pageCtrl" check-question-number add-radio>单选题</button>
+			<button class="pageCtrl" check-question-number add-checkbox>多选题</button>
+			<button class="pageCtrl" check-question-number add-textarea>文本题</button>
+		</div>
+	</div>
+	<div id="calendar"><span>截止时间:</span><input id="cText" type="text" name="cText" ng-model="selectedForm.deadline"/></div>
+	<div class="saveBtn">
+		<button class="pageCtrl" save-form type=0>保存问卷</button>
+		<button class="pageCtrl" >发布问卷</button>
+	</div>
+	<back-form-list></back-form-list>
+</div>

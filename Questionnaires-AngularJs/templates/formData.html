@@ -1,0 +1,24 @@
+<div id="formDataBody">
+	<header>
+		<p>{{selectedForm.title}}</p>
+	</header>
+	<div class="formBody">
+		<div class="dQuestion" ng-repeat="question in selectedForm.content">
+			<p>{{$index + 1}}.
+				<span>{{question.qTitle}}</span>
+				<get-type></get-type>
+			</p>
+			<div class="dOption" ng-repeat="option in question.options" ng-if="question.options">
+				<span>{{$index + 1}}.</span>
+				<span>{{option.oTitle}}</span>
+				<span>选择率</span>
+				<set-style index={{$index}} parent-index={{$parent.$parent.$index}}>{{tempData | percent}}</set-style>
+			</div>
+			<div class="dOption" ng-if="question.options === undefined">
+				<span>有效作答率</span>			
+				<set-style index={{$index}} parent-index='undefined'>{{tempData | percent}}</set-style>
+			</div>
+		</div>
+	</div>
+	<back-form-list></back-form-list>
+</div>
